@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="dropdown">
+        <ul class="menu">
+          <li><a href="#">Menu</a></li>
+          <li class="dropdown-item">
+            <a href="#">Services</a>
+            <ul class="submenu">
+              <li><a class="nav-brunch" data-tab="1" href="#">Brunch</a></li>
+              <li><a class="nav-dinner" data-tab="2" href="#">Dinner</a></li>
+              <li>
+                <a class="nav-catering" data-tab="3" href="#">Catering</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-title-photo">
+        <h1>Vibrant Vitality</h1>
+        <img src="img/cover-photo.jpg" class="cover-photo" />
+        <h3 class="slogan"><em>serving up wellness, plate by plate</em></h3>
+      </div>
+    </header>
+
+    <!-- * SECTION 1  -->
+
+    <section class="section" id="section-1">
+      <h2 class="section-title">WHY CHOOSE US?</h2>
+      <div class="section-1-grid">
+        <img
+          src="img/section-1-food-placeholder.jpg"
+          data-src="img/section-1-food.jpg "
+          class="img-section-1 lazy-img"
+        />
+        <div class="section-1-div">
+          <div class="section-1-svg-div">
+            <svg
+              class="section-1-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fefae0"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="section-1-three-titles">
+            Deliciousness, beautifully presented
+          </h3>
+          <p class="section-1-text">
+            Let's be honest - looks matter!<br />Whether you are having a meal
+            at one of our restaurants, or celebrating a special occasion with us
+            - it's love at first sight!
+          </p>
+        </div>
+        <div class="section-1-div">
+          <div class="section-1-svg-div">
+            <svg
+              class="section-1-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fefae0"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="section-1-three-titles">Inclusive and caring community</h3>
+          <p class="section-1-text">
+            Starting with our employees, all the way to our customers - at
+            Vibrant Vitality you are always in for a safe, judge free and
+            enjoyable time
+          </p>
+        </div>
+        <img
+          src="img/section-1-vibe-placeholder.jpg"
+          data-src="img/section-1-vibe.jpg"
+          class="img-section-1 lazy-img"
+        />
+        <img
+          src="img/section-1-interior3-placeholder.jpg"
+          data-src="img/section-1-interior3.jpg"
+          class="img-section-1 lazy-img"
+        />
+        <div class="section-1-div">
+          <div class="section-1-svg-div">
+            <svg
+              class="section-1-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fefae0"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M237.79,53.23a66.86,66.86,0,0,0-97.74,0,72.21,72.21,0,0,0-12.05,17,72.21,72.21,0,0,0-12-17,66.86,66.86,0,0,0-97.74,0,8,8,0,0,0,2.6,12.85L77,90.55a71.42,71.42,0,0,0-43.36,33.21,70.64,70.64,0,0,0-7.2,54.32A8,8,0,0,0,39,182.36l81-61.68V224a8,8,0,0,0,16,0V120.68l81,61.68a8,8,0,0,0,12.57-4.28,70.64,70.64,0,0,0-7.2-54.32A71.42,71.42,0,0,0,179,90.55l56.22-24.47a8,8,0,0,0,2.6-12.85ZM67.08,48a51.13,51.13,0,0,1,37.28,16.26,56.53,56.53,0,0,1,14.26,26.93L39,56.53A50.5,50.5,0,0,1,67.08,48ZM40,161.5a54.82,54.82,0,0,1,7.47-29.7,55.55,55.55,0,0,1,34-25.89A56.52,56.52,0,0,1,96.1,104a55.82,55.82,0,0,1,16.23,2.41ZM208.5,131.8A54.82,54.82,0,0,1,216,161.5l-72.3-55.1a56.3,56.3,0,0,1,64.83,25.4ZM137.38,91.19a56.53,56.53,0,0,1,14.26-26.93A51.13,51.13,0,0,1,188.92,48,50.5,50.5,0,0,1,217,56.53Z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="section-1-three-titles">Enticing garden atmosphere</h3>
+          <p class="section-1-text">
+            Our patios are carefully designed to feel as green and as lush as
+            being out in nature
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section-2">
+      <h2 class="section-title">SERVICES WE PROVIDE FOR YOU</h2>
+      <div class="container-services">
+        <div class="tabs-container">
+          <button class="btn-tab btn-tab-1 btn-tab-active" data-tab="1">
+            BRUNCH
+          </button>
+          <button class="btn-tab btn-tab-2" data-tab="2">DINNER</button>
+          <button class="btn-tab btn-tab-3" data-tab="3">CATERING</button>
+        </div>
+
+        <div
+          class="content-container content-container-1 content-container-active"
+          data-tab="1"
+        >
+          <div class="services-icon services-icon-1">
+            <svg>
+              <use xlink:href=""></use>
+            </svg>
+          </div>
+          <h3 class="services-header services-header 1">
+            The tastiest start to your morning
+          </h3>
+          <p>
+            Whether a classic breakfast person, vegan or bowl-lover, there are
+            plenty of flavorful options for breakfast at our garden
+          </p>
+        </div>
+        <div class="content-container content-container-2" data-tab="2">
+          <div class="services-icon services-icon-2">
+            <svg>
+              <use xlink:href=""></use>
+            </svg>
+          </div>
+          <h3 class="services-header services-header 2">
+            Dine casually with the neighborhood crowd
+          </h3>
+          <p>
+            Private and intimate ambient for a date, business meeting or just a
+            hangout with friends
+          </p>
+        </div>
+        <div class="content-container content-container-3" data-tab="3">
+          <div class="services-icon services-icon-3">
+            <svg>
+              <use xlink:href=""></use>
+            </svg>
+          </div>
+          <h3 class="services-header services-header 3">
+            Full catering service, tailored to your needs
+          </h3>
+          <p>
+            Timely and efficient delivery of fresh-made food of your choice from
+            our extensive catering menu. Just want delivery? No problem - we're
+            here for that too!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section-3">
+      <h2 class="section-title">CUSTOMER REVIEWS</h2>
+
+      <div class="slider">
+        <!-- ! SLIDE 1   -->
+        <div class="slide">
+          <div class="review-container">
+            <h3 class="review-title">A meal you'll remember</h3>
+            <blockquote class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              tenetur corporis amet, atque odio saepe asperiores, voluptate
+              omnis ipsum dolore sunt distinctio ipsam repudiandae, quidem
+              exercitationem reprehenderit eaque fugit in.
+            </blockquote>
+            <address class="review-customer-box">
+              <img
+                src="img/review-person-1.jpg"
+                class="review-customer-photo"
+              />
+              <h3 class="review-customer-name">Jonas S.</h3>
+              <p class="review-customer-location">San Francisco, CA</p>
+            </address>
+          </div>
+        </div>
+        <!-- ! SLIDE 2   -->
+        <div class="slide">
+          <div class="review-container">
+            <h3 class="review-title">
+              Beautifully presented, timely and efficient
+            </h3>
+            <blockquote class="review-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reprehenderit consequatur distinctio dolor placeat. Corporis
+              accusantium, animi illum deserunt error fuga, minus rerum ducimus
+              beatae enim suscipit doloremque quisquam odit quae!
+            </blockquote>
+            <address class="review-customer-box">
+              <img
+                src="img/review-person-2.jpg"
+                class="review-customer-photo"
+              />
+              <h3 class="review-customer-name">Miranda D.</h3>
+              <p class="review-customer-location">Austin, TX</p>
+            </address>
+          </div>
+        </div>
+        <!-- ! SLIDE 3   -->
+        <div class="slide">
+          <div class="review-container">
+            <h3 class="review-title">Intimate atmosphere and great service</h3>
+            <blockquote class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              deserunt error animi, enim repudiandae sit ipsam! Inventore,
+              quaerat dolore quos nulla vitae saepe enim praesentium
+              reprehenderit reiciendis delectus doloribus maxime?
+            </blockquote>
+            <address class="review-customer-box">
+              <img
+                src="img/review-person-3.jpg"
+                class="review-customer-photo"
+              />
+              <h3 class="review-customer-name">Punjabi H.</h3>
+              <p class="review-customer-location">Boston, MA</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider-btn slider-btn-left">&larr;</button>
+        <button class="slider-btn slider-btn-right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer-nav"></ul>
+      <p class="copyright"></p>
+    </footer>
+  </body>
+</html>

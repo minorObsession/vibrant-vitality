@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ! COLORS: */
+/* 
+main: #606c38 and #283618
+secondary: #bc6c25 and #dda15e
+text: #fefae0
+*/
+
+/* ! FONT SIZES */
+/* 
+10px / 12px / 16px / 20px / 25px / 32px / 40px / 48px / 60px
+
+
+*/
+
+/*  ? TO DO LIST CSS:
+1. choose actual photos 
+2. choose rest. name 
+3. choose font/typography 
+4. colors (green, orange etc.)
+
+5. style sections better according to 4.
+  - write out real text!! 
+  -
+
+
+6. placeholder photos (the blur thing)
+7.
+
+
+? */
+
+body {
+  padding: 3rem;
+  background-color: #343a40;
+  color: #fefae0;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* 
+
+
+*/
+
+/* ! DROPDOWN NAVIGATION */
+
+/* ? make it sticky at some point! */
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(51, 51, 51, 0.795);
+  padding: 0.5rem 2rem;
+}
+
+.dropdown-sticky {
+  position: fixed;
+  background: rgba(51, 51, 51, 0.582);
+}
+
+.dropdown .menu {
+  display: flex;
+  gap: 2rem;
+  /* justify-content: stretch; */
+}
+
+.dropdown .menu li {
+  padding: 0.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown .menu li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown .menu .submenu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background: rgba(51, 51, 51, 0.89);
+  width: 10rem;
+  list-style: none;
+  padding: 0;
+  left: 0;
+}
+
+.dropdown .menu .submenu li {
+  display: block;
+}
+
+.dropdown .menu .submenu li a {
+  padding: 8px 15px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show submenu on hover */
+.dropdown .menu li:hover .submenu {
+  display: block;
+}
+
+/* 
+
+
+*/
+
+/* ! TITLE-PHOTO CONTAINER  */
+
+.header-title-photo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 100vh;
+}
+
+h1 {
+  font-size: 70px;
+  letter-spacing: 1.5px;
+
+  display: inline-block;
+  justify-self: start;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.cover-photo {
+  width: 100%;
+  /* max-width: 1000px; */
+  height: 100vh;
+
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.slogan {
+  justify-self: start;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 7%;
+}
+
+.empty-div {
+  justify-self: center;
+}
+/* 
+
+
+
+*/
+
+/* ! SECTIONS */
+
+.section {
+  border-top: 1px solid #fefae0;
+  margin-top: 8rem;
+  padding: 1.5rem 0 2rem 0;
+  /* to fade in sections */
+  transition: transform 1s, opacity 1s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/* ? h2 are all section titles */
+
+.section-title {
+  max-width: 80rem;
+  margin: 0 auto 8rem 2rem;
+  font-size: 40px;
+}
+
+/* ? SECTION 1 */
+
+.section-1-grid {
+  display: grid;
+  margin: auto 5rem;
+  column-gap: 4rem;
+  row-gap: 6rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 26rem 26rem 26rem;
+}
+
+.img-section-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 320px;
+  max-width: 600px;
+  border-radius: 4%;
+  box-shadow: 0 0 3rem rgba(96, 108, 56, 0.418);
+}
+
+.lazy-img {
+  filter: blur(8px);
+}
+
+.section-1-div {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-1-svg-div {
+  max-height: 10%;
+}
+
+.section-1-icon {
+  height: 3.5rem;
+  transform: translateY(-30%);
+}
+/* 
+*/
+
+/* ? SECTION 2 */
+
+.container-services {
+  background-color: #fefae010;
+  margin: auto 5rem;
+  height: 20rem;
+  box-shadow: 0 0 3rem rgba(96, 108, 56, 0.418);
+  /* ! add box shadow  */
+}
+
+/* TABS */
+.tabs-container {
+  /* background-color: beige; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(-2.5rem);
+}
+
+/* BUTTONS */
+.btn-tab {
+  font-size: 16px;
+
+  align-self: center;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10rem;
+  /* ! add box shadow  */
+  /* ! change background color  */
+}
+
+.btn-tab-1 {
+  background-color: #5c940d;
+}
+.btn-tab-2 {
+  background-color: #dda15e;
+}
+.btn-tab-3 {
+  background-color: #fefae0;
+}
+.btn-tab-1:hover {
+  background-color: #53850c;
+}
+.btn-tab-2:hover {
+  background-color: #c79155;
+}
+.btn-tab-3:hover {
+  background-color: #e5e1ca;
+}
+
+.btn-tab-active {
+  transform: translateY(-0.6rem);
+  transition: all 0.4s;
+  /* width: 12rem; */
+
+  /* ! increase button font so it's bigger */
+}
+
+/* CONTENT */
+.content-container {
+  display: none;
+}
+
+.content-container-active {
+  display: grid;
+  grid-template-columns: 7rem 1fr 7rem;
+  grid-template-rows: 5rem 10rem;
+  row-gap: 2rem;
+}
+
+.content-container p {
+  grid-column: 2;
+}
+
+/* 
+*/
+
+/* ? SECTION 3 */
+
+.slider {
+  max-width: 80rem;
+  height: 16rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider-btn {
+  position: absolute;
+  top: calc(60% - 1.5rem);
+  /* top: 50%; */
+  z-index: 10;
+  border: none;
+  background-color: rgba(221, 161, 94, 1);
+  opacity: 0.7;
+  font-family: inherit;
+  color: black;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+
+  transform: translateY(-150%);
+}
+
+.slider-btn-left {
+  left: 0;
+}
+
+.slider-btn-right {
+  right: 0;
+}
+
+.review-container {
+  margin-left: 2rem;
+  width: 45rem;
+  height: 40%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.review-customer-box {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  align-items: end;
+  column-gap: 0.5rem;
+}
+
+.review-customer-photo {
+  display: block;
+  grid-row: 1 / span 2;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+/* DOTS */
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+
+.dot {
+  border: none;
+  background-color: rgba(221, 161, 94, 1);
+  opacity: 0.5;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dot:last-child {
+  margin: 0;
+}
+
+.dot-active {
+  background-color: #dda15e;
+  opacity: 1;
+}
